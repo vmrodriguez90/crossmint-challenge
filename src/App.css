@@ -1,0 +1,52 @@
+.app {
+	text-align: center;
+}
+
+.app-logo {
+	height: 5vmin;
+	pointer-events: none;
+}
+
+.app-header {
+	background-color: #282c34;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.app-header * {
+	width: 200px;
+	margin-left: 20px;
+	;
+}
+
+.app-link {
+	color: #61dafb;
+}
+
+button {
+	margin-top: -30px;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: background 400ms;
+	transition: background 400ms;
+	color: #fff;
+	background-color: #282c34;
+	padding: 10px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	outline: 0;
+	border: 0;
+	border-radius: 0.25rem;
+	-webkit-box-shadow: 0 0 0.5rem rgba (0, 0, 0, 0.3);
+	box-shadow: 0 0 0.5rem rgba (0, 0, 0, 0.3);
+	cursor: pointer;
+	margin: 10px 20px;
+}
+button.white {
+  background-color: white;
+  color: #000;
+}
