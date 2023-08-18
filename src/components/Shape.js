@@ -72,14 +72,11 @@ class ShapeFactory {
     getShape(value, row = 0, column = 0) {
         if(value.split('_').length > 1) {
             if (['up', 'down', 'left', 'right'].indexOf(value.split('_')[0].toLowerCase())!==-1) {
-                // console.log(`VALUE:  ${value} SHAPE: comet [${row}:${column}]`);
                 return new DirectionalShape(value.split('_')[1],value.split('_')[0], row, column);
             } else if(['red', 'blue', 'purple', 'white'].indexOf(value.split('_')[0].toLowerCase())!==-1) {
-                // console.log(`VALUE:  ${value} SHAPE: moon [${row}:${column}]`);
                 return new ColoredShape(value.split('_')[1],value.split('_')[0], row, column);
             }
         }
-        // console.log(`VALUE:  ${value} SHAPE: planet [${row}:${column}]`);
         return new Shape(value, row, column);
     }
 
